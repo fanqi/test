@@ -11,31 +11,31 @@
 1. 首先单击右上角的 *+* 按钮，然后选择”内容“面板，选择”添加新的“》”基本网页内容“，打开”新的网页内容“界面
 1. 在标题输入框中输入“在 Liferay 的网页内容中使用 AlloyUI”
 1. 在内容输入框中切换到源代码视图（点击右上角的</>图标）,复制以下官方示例代码：
-```
-<div id="myCarousel">
-  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/1.jpg);"></div>
-  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/2.jpg);"></div>
-  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/3.jpg);"></div>
-  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/4.jpg);"></div>
-</div>
-<script>
-	YUI().use(
-	  'aui-carousel',
-	  function(Y) {
-	    new Y.Carousel(
-	      {
-	        activeIndex: 'rand',
-	        contentBox: '#myCarousel',
-	        height: 250,
-	        intervalTime: 2,
-	        width: 700
-	      }
-	    ).render();
-	  }
-	);
-</script>
-```
-1. 然后点击“保存”按钮，在页面上就可以看到轮播图的实现。
+	```
+	<div id="myCarousel">
+	  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/1.jpg);"></div>
+	  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/2.jpg);"></div>
+	  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/3.jpg);"></div>
+	  <div class="image-viewer-base-image" style="background: url(http://alloyui.com/carousel/img/4.jpg);"></div>
+	</div>
+	<script>
+		YUI().use(
+		  'aui-carousel',
+		  function(Y) {
+		    new Y.Carousel(
+		      {
+			activeIndex: 'rand',
+			contentBox: '#myCarousel',
+			height: 250,
+			intervalTime: 2,
+			width: 700
+		      }
+		    ).render();
+		  }
+		);
+	</script>
+	```
+1. 然后点击“保存”按钮，在页面上就可以看到官网一样的轮播图实现了。
 
 > 注意：以上步骤并不需要引入任何额外的 js 或者 css 文件，因为这些 Liferay Portal 默认的主题已经集成了。
 
